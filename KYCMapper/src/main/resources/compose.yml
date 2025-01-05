@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+    db:
+        image: mysql:9
+        restart: always
+        environment:
+            MYSQL_DATABASE: 'NimbusKYC'
+            MYSQL_USER: 'root'
+            MYSQL_PASSWORD: 'Q1.w2-e3.r4'
+        ports:
+            - '5555:3306'
+        expose:
+            - '3306'
+        volumes:
+            - my-db:/var/lib/mysql
+# Names our volume
+volumes:
+    my-db:
