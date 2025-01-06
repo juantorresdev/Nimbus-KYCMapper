@@ -1,4 +1,5 @@
 version: '3.3'
+
 services:
     db:
         image: mysql:9
@@ -11,8 +12,3 @@ services:
             - '5555:3306'
         expose:
             - '3306'
-        volumes:
-            - my-db:/var/lib/mysql
-# Names our volume
-volumes:
-    my-db:
