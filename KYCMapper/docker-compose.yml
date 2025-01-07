@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+    my-service:
+        image: nimbuskycdb:1.0
+        ports:
+            - "5555:3306"
+        environment:
+            MYSQL_DATABASE: 'NimbusKYC'
+            MYSQL_USER: 'root'
+            MYSQL_PASSWORD: 'Q1.w2-e3.r4'
