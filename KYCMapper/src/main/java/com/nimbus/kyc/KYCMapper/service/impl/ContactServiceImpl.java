@@ -1,4 +1,8 @@
 package com.nimbus.kyc.KYCMapper.service.impl;
 
-public class ContactServiceImpl {
+import com.nimbus.kyc.KYCMapper.service.ContactService;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ContactServiceImpl implements ContactService {
 }

@@ -14,7 +14,7 @@
             <Root>
                 <AppenderRef ref="Console" />
             </Root>
-        <!--Logger name="com.nimbus.kyc.KYCMapper" level="debug" additivity="false">
+        <Logger name="com.nimbus.kyc.KYCMapper" level="debug" additivity="false">
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
         </Logger>
@@ -24,6 +24,6 @@
         <Root level="error">
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
-        </Root-->
+        </Root>
     </Loggers>
 </Configuration>

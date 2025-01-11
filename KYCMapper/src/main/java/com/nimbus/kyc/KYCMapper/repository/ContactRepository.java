@@ -1,4 +1,7 @@
 package com.nimbus.kyc.KYCMapper.repository;
 
-public interface ContactRepository {
+import com.nimbus.kyc.KYCMapper.entity.Contact;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ContactRepository extends JpaRepository<Contact, Long> {
 }

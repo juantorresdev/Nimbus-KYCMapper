@@ -1,4 +1,8 @@
 package com.nimbus.kyc.KYCMapper.service.impl;
 
-public class BiometricServiceImpl {
+import com.nimbus.kyc.KYCMapper.service.BiometricService;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BiometricServiceImpl implements BiometricService {
 }
