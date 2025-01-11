@@ -1,4 +1,7 @@
 package com.nimbus.kyc.KYCMapper.repository;
 
-public interface DeviceRepository {
+import com.nimbus.kyc.KYCMapper.entity.Device;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DeviceRepository extends JpaRepository<Device, Long> {
 }

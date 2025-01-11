@@ -1,4 +1,8 @@
 package com.nimbus.kyc.KYCMapper.service.impl;
 
-public class AddressServiceImpl {
+import com.nimbus.kyc.KYCMapper.service.AddressService;
+import org.springframework.stereotype.Service;
+
+@Service
+public class AddressServiceImpl implements AddressService {
 }
