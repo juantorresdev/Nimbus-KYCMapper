@@ -9,3 +9,7 @@ services:
             - MYSQL_DATABASE=NimbusKYC
         volumes:
             - "./conf.d:/etc/mysql/conf.d:ro"
+    app:
+        image: kycmapper:1.0
+        ports:
+            -   "9090:9090"
