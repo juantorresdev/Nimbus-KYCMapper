@@ -1,6 +1,7 @@
 package com.nimbus.kyc.KYCMapper.controller;
 
 import com.nimbus.kyc.KYCMapper.dto.CatalogElementDTO;
+import com.nimbus.kyc.KYCMapper.wrapper.request.MasterCatalogRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -33,6 +34,13 @@ public class MasterCatalogController {
         logger.warn("getCatalogElements");
         logger.trace("getCatalogElements");
         return ResponseEntity.ok().body(new ArrayList<String>());
+
+    }
+
+    @PostMapping("element")
+    public ResponseEntity<CatalogElementDTO> createCatalogElement(@RequestBody MasterCatalogRequest masterCatalogRequest){
+
+        return ResponseEntity.ok().build();
 
     }
 
