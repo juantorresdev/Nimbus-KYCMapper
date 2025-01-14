@@ -1,21 +1,20 @@
 package com.nimbus.kyc.KYCMapper.service;
 
-import com.nimbus.kyc.KYCMapper.entity.MasterCatalog;
+import com.nimbus.kyc.KYCMapper.dto.CatalogElementDTO;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface MasterCatalogService {
 
-    public MasterCatalog createMasterCatalog(MasterCatalog masterCatalog);
+    public CatalogElementDTO createMasterCatalog(CatalogElementDTO catalogElementDTO);
 
-    public MasterCatalog updateMasterCatalog(MasterCatalog masterCatalog);
+    public CatalogElementDTO updateMasterCatalog(CatalogElementDTO catalogElementDTO);
 
-    public MasterCatalog deleteMasterCatalog(MasterCatalog masterCatalog);
+    public CatalogElementDTO deleteMasterCatalog(CatalogElementDTO catalogElementDTO);
 
-    public MasterCatalog getMasterCatalog(MasterCatalog masterCatalog);
+    public CatalogElementDTO getMasterCatalog(CatalogElementDTO catalogElementDTO);
 
-    public List<MasterCatalog> getMasterCatalogs();
+    public List<CatalogElementDTO> getMasterCatalogs();
 
-    public List<MasterCatalog> getMasterCatalogsByCriteria(Long masterId);
+    public List<CatalogElementDTO> getMasterCatalogsByCriteria(Long masterId);
 }

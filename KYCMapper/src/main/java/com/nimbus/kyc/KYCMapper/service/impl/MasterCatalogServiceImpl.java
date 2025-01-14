@@ -1,6 +1,6 @@
 package com.nimbus.kyc.KYCMapper.service.impl;
 
-import com.nimbus.kyc.KYCMapper.entity.MasterCatalog;
+import com.nimbus.kyc.KYCMapper.dto.CatalogElementDTO;
 import com.nimbus.kyc.KYCMapper.repository.MasterCatalogRepository;
 import com.nimbus.kyc.KYCMapper.service.MasterCatalogService;
 import org.slf4j.Logger;
@@ -19,40 +19,40 @@ public class MasterCatalogServiceImpl implements MasterCatalogService {
     
     private static final Logger logger = LoggerFactory.getLogger(MasterCatalogServiceImpl.class);
     
-    public MasterCatalog createMasterCatalog(MasterCatalog masterCatalog) {
+    public CatalogElementDTO createMasterCatalog(CatalogElementDTO catalogElementDTO) {
         logger.info("Creating master catalog element");
-        MasterCatalog masterCatalogEntity = new MasterCatalog();
-        return masterCatalogEntity;
+        CatalogElementDTO masterCatalogElementDTO = new CatalogElementDTO();
+        return masterCatalogElementDTO;
     }
     
-    public MasterCatalog updateMasterCatalog(MasterCatalog masterCatalog) {
+    public CatalogElementDTO updateMasterCatalog(CatalogElementDTO catalogElementDTO) {
         logger.info("Updating master catalog element");
-        MasterCatalog masterCatalogEntity = new MasterCatalog();
-        return masterCatalogEntity;
+        CatalogElementDTO masterCatalogElementDTO = new CatalogElementDTO();
+        return masterCatalogElementDTO;
     }
     
-    public MasterCatalog deleteMasterCatalog(MasterCatalog masterCatalog) {
+    public CatalogElementDTO deleteMasterCatalog(CatalogElementDTO catalogElementDTO) {
         logger.info("Deleting master catalog element");
-        MasterCatalog masterCatalogEntity = new MasterCatalog();
-        return masterCatalogEntity;
+        CatalogElementDTO masterCatalogElementDTO = new CatalogElementDTO();
+        return masterCatalogElementDTO;
     }
     
-    public MasterCatalog getMasterCatalog(MasterCatalog masterCatalog) {
+    public CatalogElementDTO getMasterCatalog(CatalogElementDTO catalogElementDTO) {
         logger.info("Retrieving master catalog element");
-        MasterCatalog masterCatalogEntity = new MasterCatalog();
-        return masterCatalogEntity;
+        CatalogElementDTO masterCatalogElementDTO = new CatalogElementDTO();
+        return masterCatalogElementDTO;
     }
     
-    public List<MasterCatalog> getMasterCatalogs() {
+    public List<CatalogElementDTO> getMasterCatalogs() {
         logger.info("Retrieving all master catalog elements");
-        List<MasterCatalog> masterCatalogEntityList = new ArrayList<>();
-        return masterCatalogEntityList;
+        List<CatalogElementDTO> catalogElementDTOS = new ArrayList<>();
+        return catalogElementDTOS;
     }
 
-    public List<MasterCatalog> getMasterCatalogsByCriteria(Long masterId) {
+    public List<CatalogElementDTO> getMasterCatalogsByCriteria(Long masterId) {
         logger.info("Retrieving master catalog elements by criteria");
-        List<MasterCatalog> masterCatalogEntityList = new ArrayList<>();
-        return masterCatalogEntityList;
+        List<CatalogElementDTO> catalogElementDTOS = new ArrayList<>();
+        return catalogElementDTOS;
     }
 
 }
